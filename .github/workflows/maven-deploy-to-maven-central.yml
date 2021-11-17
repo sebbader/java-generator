@@ -23,7 +23,7 @@ jobs:
 
       - uses: s4u/maven-settings-action@v2.4.1
         with:
-          servers: |
+          servers: | 
           [{
             "id": "ossrh",
             "username": "sebbader",
