@@ -50,7 +50,7 @@ jobs:
         run: gpg --allow-secret-key-import --batch --import ${{ secrets.MYGPGKEY_SEC }} # mygpgkey_sec.gpg
 
       - name: Build with Maven
-        run: mvn -P CI-AAS -B install --file pom.xml
+        # run: mvn -P CI-AAS -B install --file pom.xml
 
       - name: deploy library to sonatype
         run: mvn license:format deploy
