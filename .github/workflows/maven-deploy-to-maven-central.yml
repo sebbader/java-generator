@@ -23,15 +23,15 @@ jobs:
 
       - uses: s4u/maven-settings-action@v2.4.1
         with:
-          servers: | 
-          [{
-            "id": "ossrh",
-            "username": "sebbader",
-            "password": "${{ secrets.SEBBADER_OSSHR_PASSWORD }}"
-          },{
-            "id": "0xDFCC34A6",
-            "passphrase": "${{ secrets.GPG_KEY_PASSWORD }}"
-          }]
+          servers: |
+            [{
+              "id": "ossrh",
+              "username": "sebbader",
+              "password": "${{ secrets.SEBBADER_OSSHR_PASSWORD }}"
+            },{
+              "id": "0xDFCC34A6",
+              "passphrase": "${{ secrets.GPG_KEY_PASSWORD }}"
+            }]
 
       - name: Show current Working directory
         run: ls
