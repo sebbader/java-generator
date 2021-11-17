@@ -38,8 +38,14 @@ jobs:
           distribution: 'adopt'
           cache: maven
 
-      - name: Import the GPG key
-        run: gpg --allow-secret-key-import --batch --import ${{ secrets.MYGPGKEY_SEC }} # mygpgkey_sec.gpg
+      #- name: Import the GPG key
+      #  run: gpg --allow-secret-key-import --batch --import ${{ secrets.MYGPGKEY_SEC }} # mygpgkey_sec.gpg
+      - name: Import GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v4
+        with:
+          gpg_private_key: ${{ secrets.MYGPGKEY_SEC }}
+          passphrase: ${{ secrets.GPG_KEY_PASSWORD }}
 
       #- name: Build with Maven
         # run: mvn -P CI-AAS -B install --file pom.xml
