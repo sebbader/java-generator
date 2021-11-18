@@ -60,7 +60,7 @@
     </modules>
     <properties>
   		  <!-- General -->
-        <revision>1.0.0-SNAPSHOT</revision>
+        <revision>1.2.1</revision>
         <jackson.version>2.11.2</jackson.version>
         <!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
     		<email>contact@ids.fraunhofer.de</email>
