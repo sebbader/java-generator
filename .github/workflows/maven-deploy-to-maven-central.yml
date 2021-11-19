@@ -39,7 +39,7 @@ jobs:
         run: mvn -P CI-AAS install --file pom.xml
 
       - name: Publish to Apache Maven Central
-        run: mvn -X -e -P MavenCentral deploy
+        run: mvn -pl model -P MavenCentral deploy
         env:
           OSSRH_USERNAME: sebbader
           OSSRH_PASSWORD: ${{ secrets.SEBBADER_OSSHR_PASSWORD }}
