@@ -23,7 +23,6 @@ The project contains several modules:
 - `generator` This module loads all data required for the translation process from RDF ontologies to Java classes, including the shapes and the ontology.
 
 
-
 # How to Contribute
 
 We always look for contributions, bug reports, feature requests etc. Simply open an [issue](https://github.com/admin-shell-io/java-generator/issues) or - even better - directly propose a change through a [pull request](https://github.com/admin-shell-io/java-generator/pulls).
